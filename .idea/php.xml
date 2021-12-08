@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/composer" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/php-webdriver/webdriver" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/phpunit/vendor/phpunit/phpunit-selenium" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" phpunit_phar_path="" />
+    </phpunit_settings>
+  </component>
+</project>
