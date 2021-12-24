@@ -7,14 +7,6 @@ require_once 'Dev.php';
 
 class TasksTest extends Selenium2TestCase
 {
-//    public static function setUpBeforeClass(): void
-//    {
-//        parent::setUpBeforeClass();
-//
-//        self::setBrowserUrl('http://coursesite.local/');
-//        (new TasksTest)->setBrowser('chrome');
-//        (new TasksTest)->setDesiredCapabilities(['chromeOptions' => ['w3c'=>false]]);
-//    }
 
 
     public function setUp(): void
@@ -142,13 +134,40 @@ class TasksTest extends Selenium2TestCase
 
     public function testDownload()
     {
-        $url = 'https://support.crowdin.com/assets/api/crowdin.yml';
-        $fileSizeFromSite = array_change_key_case(get_headers($url,1))['content-length'];
-        $this->assertEquals(filesize('crowdin.yml'), $fileSizeFromSite);
+        $qwe = curl_init('https://support.crowdin.com/assets/api/crowdin.yml');
+        curl_setopt($qwe, CURLOPT_RETURNTRANSFER,true);
+        $file = curl_exec($qwe);
+//        $url = 'https://support.crowdin.com/assets/api/crowdin.yml';
+//        $fileSizeFromSite = array_change_key_case(get_headers($url,1))['content-length'];
 
+        $this->assertEquals(file_get_contents('crowdin.yml'), $file);
+        curl_close($qwe);
 
     }
+    public function testDownloadFile()
+    {
+        $this->assertEquals(file_get_contents('crowdin.yml'), file_get_contents('https://support.crowdin.com/assets/api/crowdin.yml'));
+    }
 
+
+    public function testUploadFile()
+    {
+        $this->url('');
+        $this->enterLoginData();
+        $this->url('http://coursesite.local/tasks');
+        $this->assertSame('Document', $this->title());
+
+        $uploadField = $this->element($this->using('css selector')->value("input[type='file']"));
+
+        $uploadField->value("/var/www/html/phpunite.course/crowdin.yml");
+        $this->assertNotSame('', $uploadField->value());
+
+        $btn = $this->byCssSelector('#theSubmitUpload');
+        $btn->click();
+
+        $uploadField = $this->element($this->using('css selector')->value("input[type='file']"));
+        $this->assertSame("", $uploadField->value());
+    }
 
 
     /*

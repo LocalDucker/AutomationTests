@@ -1,6 +1,10 @@
 {
     "require-dev": {
         "phpunit/phpunit-selenium": "^9",
-        "phpunit/phpunit": "9.3.*"
+        "phpunit/phpunit": "9.3.*",
+        "php-webdriver/webdriver": "1.12.*"
+    },
+    "autoload": {
+        "files": ["tests/", "tests/Page"]
     }
 }
